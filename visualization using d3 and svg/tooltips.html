@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      svg {
+        margin: 0 auto;
+        display: block;
+      }
+      .tick line{
+        stroke-dasharray:10 5;
+        stroke: grey;
+      }
+      .tooltip{
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        background:skyblue;
+        color: darkgreen;
+        border: 4px solid darkblue;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      .tooltip p{
+        margin: 0;
+      }
+      .tooltip:before{
+        content: '';
+        margin: 0;
+        position: absolute;
+        left: 40%;
+        top: -22px;
+        border:10px solid transparent;
+        border-bottom-color:darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <svg>
+
+    </svg>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="birthData2011.js" charset="utf-8"></script>
+    <script src="scatterPlots.js" charset="utf-8"></script>
+  </body>
+</html>
